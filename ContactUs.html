@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=content-width, initial-scale=1.0">
+  <link href="pc_reset2.css" rel="stylesheet">
+  <link href="base.css" rel="stylesheet">
+  <link href="ContactUs.css" rel="stylesheet">
+  <link href="icon.png" rel="icon" type="image/x-icon" >
+  <script src="menu_panel.js" defer></script>
+  <script src="ContactUs.js" defer></script>
+  <title>Events</title>
+</head>
+
+<body>
+  <div id="menu_panel">
+    <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+      <ul>
+        <li><a href="home.html" class="hyperlink">Home</a></li>
+          <span class="submenu-parent">
+            <span><a href="menu.html" class="hyperlink">Menu</a></span>
+            <ul class="submenu">
+            <li><a href="food.html" class="hyperlink">Food</a></li>
+            <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+            <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+            </ul>
+          </span>
+        <li><a href="events.html" class="hyperlink">Events</a></li>
+        <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+        <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+        <li><a href="stores.html" class="hyperlink">Stores</a></li>
+        <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+        <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+        <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+        <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+      </ul>
+  </div>
+
+  <header class="top_panel">
+    <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+    <a href="home.html" class="backToHome">ILTT</a>
+    <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+    <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+  </header>
+              
+  <audio src="good-night-160166.mp3" preload autoplay loop></audio>
+  
+  <img src="contactnewpic.png" class="heading" alt="Contact Us">
+
+  <p class="comment">Have something to say? Let us know your feedback, inquiries or even make a reservation through:</p>
+
+  <div class="container">
+
+    <div class="contact">
+      <div class="numbertext"><a href="tel:+60186632127" class="firstClicklink">Whatsapp Us</a></div>
+        <img src="whatsapp.png">
+    </div>
+    
+    <div class="contact">
+      <div class="numbertext"><a href="mailto:ngjingyong168@gmail.com" class="secondClicklink">Email Us</a></div>
+        <img src="email.png">
+    </div>
+    
+    <div class="contact">
+      <div class="numbertext"><a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="firstClicklink">Follow our account</a></div>
+        <img src="instagram.png">
+    </div>
+    
+    <div class="contact">
+      <div class="numbertext"><a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="secondClicklink">Follow our page</a></div>
+        <img src="facebook.png">
+    </div>
+    
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="opacity" src="whatsapp.png" onclick="currentSlide(1)" alt="Whatsapp">
+      </div>
+      <div class="column">
+        <img class="opacity" src="email.png" onclick="currentSlide(2)" alt="Email">
+      </div>
+      <div class="column">
+        <img class="opacity" src="instagram.png" onclick="currentSlide(3)" alt="Instagram">
+      </div>
+      <div class="column">
+        <img class="opacity" src="facebook.png" onclick="currentSlide(4)" alt="Facebook">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="layout">
+      <div class="left-layout">
+        <h3 class="newsletter">The coffee shop has a cozy and welcoming atmosphere.</h3>
+        <form action="">
+          <input type="text" placeholder="Email Address" />
+          <button href="mailto:ngjingyong168@gmail.com">
+            <img src="right-arrow.png" alt="arrow" />
+          </button>
+        </form>
+      </div>
+      <div class="right-layout">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+          <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+          <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+          <li><a href="#" class="list_items">Privacy Policy</a></li>
+          <li><a href="#" class="list_items">Contact</a></li>
+          <li><a href="#" class="list_items">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-layout">
+      <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+      <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+      <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+    </div>
+  </footer>
+</body>
+</html>

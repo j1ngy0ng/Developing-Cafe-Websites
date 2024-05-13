@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pc_reset2.css" rel="stylesheet">
+    <link href="base.css" rel="stylesheet">
+    <link href="food.css" rel="stylesheet">
+    <link href="icon.png" rel="icon" type="image/x-icon" >
+    <title>Food2</title>
+    <script src="food.js" defer></script>
+    <script src="menu_panel.js" defer></script>
+</head>
+
+<body>
+    <div id="menu_panel">
+        <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+          <ul>
+            <li><a href="home.html" class="hyperlink">Home</a></li>
+              <span class="submenu-parent">
+                <span><a href="menu.html" class="hyperlink">Menu</a></span>
+                <ul class="submenu">
+                <li><a href="food.html" class="hyperlink">Food</a></li>
+                <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+                <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+                </ul>
+              </span>
+            <li><a href="events.html" class="hyperlink">Events</a></li>
+            <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+            <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+            <li><a href="stores.html" class="hyperlink">Stores</a></li>
+            <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+            <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+            <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+            <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+          </ul>
+      </div>
+
+  <header class="top_panel">
+    <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+    <a href="home.html" class="backToHome">ILTT</a>
+    <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+    <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+  </header>
+
+<audio src="sakuya2.mp3" preload autoplay loop></audio>
+
+<div class="food_container">
+
+  <!--Fish Steak-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="fishSteak.jpg" alt="Fish Steak" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Fish Steak</h1>
+      <p class="description">A delectable fish steak offers a tantalizing blend of golden-brown sear, fragrant aroma, tender flakes, harmonious flavors, succulent juiciness, and memorable balance, creating a culinary masterpiece.</p>
+      <p class="foodPrice">RM 30</p>
+    </div>
+  </div>
+
+  <!--Nachos-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="nachos.jpg" alt="Nachos" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Nachos</h1>
+      <p class="description">Nachos are a beloved snack or appetizer, featuring crispy tortilla chips smothered in melted cheese, often topped with various savory ingredients like jalapeños, sour cream, guacamole, and salsa, creating a delightful and satisfying Tex-Mex treat.</p>
+      <p class="foodPrice">RM 18</p>
+    </div>
+  </div>
+
+  <!--Quesadillas-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="quesadillas.jpg" alt="Quiche" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Quiche</h1>
+      <p class="description">A Mexican dish consisting of tortillas filled with cheese and often additional ingredients like grilled chicken, vegetables, or beans. They are heated until the cheese melts, creating a gooey and flavorful delight, often served with salsa, guacamole, or sour cream.</p>
+      <p class="foodPrice">RM 19</p>
+    </div>
+  </div>
+
+  <!--Sausage Rolls-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="sausageRolls.jpg" alt="Sausage Rolls" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Sausage Rolls</h1>
+      <p class="description">A popular savory pastry snack. They typically consist of seasoned ground sausage meat encased in flaky pastry dough, baked to a golden brown perfection, offering a delightful combination of flavors and textures.</p>
+      <p class="foodPrice">RM 20</p>
+    </div>
+  </div>
+
+  <!--Sushi Rolls-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="sushiRolls.jpg" alt="Sushi Rolls" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Sushi Rolls</h1>
+      <p class="description">A Japanese delicacy made from vinegared rice, seaweed (nori), and a variety of fillings.These ingredients are rolled together using a bamboo mat, then sliced into bite-sized pieces, offering a harmonious blend of flavors and textures.</p>
+      <p class="foodPrice">RM 40</p>
+    </div>
+  </div>
+
+  <!--Stuffed Baked Potatoes-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="stuffedBakedPotatoes.jpg" alt="Macaroni" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Stuffed Baked Potatoes</h1>
+      <p class="description">Are a comforting dish involve baking large potatoes until tender, then scooping out the flesh, mixing it with various ingredients like cheese, sour cream, bacon bits, chives, and butter. Creating a hearty and flavorful side dish or even a meal in itself.</p>
+      <p class="foodPrice">RM 25</p>
+    </div>
+  </div>
+
+  <!--Soup Of The Day-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="soupOfTheDay.jpg" alt="Soup Of The Day" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Soup Of The Day</h1>
+      <p class="description">A daily special soup offering at a restaurant or eatery. It varies from day to day, featuring a rotating selection of homemade soups made with fresh, seasonal ingredients.</p>
+      <p class="foodPrice">RM 50</p>
+    </div>
+  </div>
+
+  <!--Sandwich-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="sandwich.jpg" alt="Brushetta" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Sandwich</h1>
+      <p class="description">A versatile and widely loved food item made by placing various fillings, such as meats, cheeses, vegetables, and condiments, between slices of bread or within a bread roll.</p>
+      <p class="foodPrice">RM 25</p>
+    </div>
+  </div>
+
+  <!--Fried Egg and Bread Pklatter-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="friedEgg.jpg" alt="Wrap" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Fried Egg and Bread Pklatter</h1>
+      <p class="description">A simple yet satisfying dish often enjoyed for breakfast or brunch. It typically consists of sunny-side-up or over-easy fried eggs served alongside slices of toasted or fried bread. The eggs are often seasoned with salt, pepper, and sometimes herbs or spices for added flavor.</p>
+      <p class="foodPrice">RM 23</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="next-food">
+  <div class="pagination">
+    <a href="food.html">«</a>
+    <a href="food.html">1</a>
+    <a href="food2.html">2</a>
+    <a href="food3.html" class="active">3</a>
+    <a href="food3.html">»</a>
+  </div>
+</div>
+
+<footer>
+  <div class="layout">
+    <div class="left-layout">
+      <h3 class="newsletter">Soft jazz music sets the mood for a relaxing visit.</h3>
+      <form action="">
+        <input type="text" placeholder="Email Address" />
+        <button href="mailto:ngjingyong168@gmail.com">
+          <img src="right-arrow.png" alt="" />
+        </button>
+      </form>
+    </div>
+    <div class="right-layout">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+        <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+        <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+        <li><a href="#" class="list_items">Privacy Policy</a></li>
+        <li><a href="#" class="list_items">Contact</a></li>
+        <li><a href="#" class="list_items">Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-layout">
+    <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+    <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+    <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+  </div>
+</footer>
+
+</body>
+</html>

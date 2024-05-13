@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pc_reset2.css" rel="stylesheet">
+    <link href="base.css" rel="stylesheet">
+    <link href="food.css" rel="stylesheet">
+    <link href="icon.png" rel="icon" type="image/x-icon" >
+    <title>Food2</title>
+    <script src="food.js" defer></script>
+    <script src="menu_panel.js" defer></script>
+</head>
+
+<body>
+    <div id="menu_panel">
+        <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+          <ul>
+            <li><a href="home.html" class="hyperlink">Home</a></li>
+              <span class="submenu-parent">
+                <span><a href="menu.html" class="hyperlink">Menu</a></span>
+                <ul class="submenu">
+                <li><a href="food.html" class="hyperlink">Food</a></li>
+                <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+                <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+                </ul>
+              </span>
+            <li><a href="events.html" class="hyperlink">Events</a></li>
+            <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+            <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+            <li><a href="stores.html" class="hyperlink">Stores</a></li>
+            <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+            <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+            <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+            <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+          </ul>
+      </div>
+
+  <header class="top_panel">
+    <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+    <a href="home.html" class="backToHome">ILTT</a>
+    <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+    <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+  </header>
+
+<audio src="sakuya2.mp3" preload autoplay loop></audio>
+
+<div class="food_container">
+
+  <!--Avocado Toast-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="avocadoToast.jpg" alt="Avocado Toast" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Avocado Toast</h1>
+      <p class="description">A dish consisting of ripe avocado mashed or sliced on toasted bread, often seasoned with salt, pepper, and various toppings, popular for its creamy texture and health benefits.</p>
+      <p class="foodPrice">RM 10</p>
+    </div>
+  </div>
+
+  <!--Panini-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="panini.jpg" alt="Panini" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Panini</h1>
+      <p class="description">A panini is a delectable grilled sandwich made with various fillings like meats, cheeses, and vegetables. It's pressed to perfection, creating a crispy exterior and a flavorful, melt-in-your-mouth experience.</p>
+      <p class="foodPrice">RM 15</p>
+    </div>
+  </div>
+
+  <!--Quiche-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="quiche.jpg" alt="Quiche" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Quiche</h1>
+      <p class="description">A savory pastry dish consisting of a creamy, egg-based filling mixed with ingredients like cheese, vegetables, and meats. It's baked to perfection, resulting in a delicious and flavorful treat.</p>
+      <p class="foodPrice">RM 18</p>
+    </div>
+  </div>
+
+  <!--Cheese Sandwich-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="cheeseSandwich.jpg" alt="Cheese Sandwich" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Cheese Sandwich</h1>
+      <p class="description">A delightful pairing of cheese, typically melted, nestled between slices of bread, which can be toasted to perfection. Occasionally enriched with creamy butter or tangy mayo, it's adored for its rich, savory flavors.</p>
+      <p class="foodPrice">RM 15</p>
+    </div>
+  </div>
+
+  <!--Frittatas-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="frittatas.jpg" alt="Frittatas" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Frittatas</h1>
+      <p class="description">An appetizing fusion of eggs, a colorful array of vegetables, flavorful meats, and melty cheese, expertly cooked to a golden perfection. This dish offers a rich, satisfying, and versatile taste sensation.</p>
+      <p class="foodPrice">RM 20</p>
+    </div>
+  </div>
+
+  <!--Macaroni-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="macaroni.jpg" alt="Macaroni" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Macaroni</h1>
+      <p class="description">A beloved pasta variety, known for its small, tubular shape. It's often boiled until tender and mixed with a variety of sauces, creating a comforting and flavorful dish.</p>
+      <p class="foodPrice">RM 17</p>
+    </div>
+  </div>
+
+  <!--Omelets-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="omelets.jpg" alt="Omelets" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Omelets</h1>
+      <p class="description">A breakfast favorite, boast a delicious taste. Whisked eggs, cooked to fluffy perfection, embrace various savory fillings like cheese, vegetables, and meats, offering a satisfying and flavorful morning delight.</p>
+      <p class="foodPrice">RM 20</p>
+    </div>
+  </div>
+
+  <!--Bruschetta-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="bruschetta.jpg" alt="Brushetta" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Brushetta</h1>
+      <p class="description">An appetizer originating from Italy, featuring toasted bread slices rubbed with garlic and topped with diced tomatoes, fresh basil, olive oil, and often, balsamic vinegar. It's a flavorful and popular dish.</p>
+      <p class="foodPrice">RM 25</p>
+    </div>
+  </div>
+
+  <!--Brown Bread-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="brownBread.jpg" alt="Wrap" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Brown Bread</h1>
+      <p class="description">A type of bread made from whole wheat flour, which includes the bran and germ, giving it a brown color.Brown bread has a hearty, slightly nutty flavor and is commonly used for sandwiches and toast. </p>
+      <p class="foodPrice">RM 18</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="next-food">
+  <div class="pagination">
+    <a href="food.html">«</a>
+    <a href="food.html">1</a>
+    <a href="food2.html" class="active">2</a>
+    <a href="food3.html">3</a>
+    <a href="food3.html">»</a>
+  </div>
+</div>
+
+<footer>
+  <div class="layout">
+    <div class="left-layout">
+      <h3 class="newsletter">Free Wi-Fi is available for customers to work or surf.</h3>
+      <form action="">
+        <input type="text" placeholder="Email Address" />
+        <button href="mailto:ngjingyong168@gmail.com">
+          <img src="right-arrow.png" alt="" />
+        </button>
+      </form>
+    </div>
+    <div class="right-layout">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+        <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+        <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+        <li><a href="#" class="list_items">Privacy Policy</a></li>
+        <li><a href="#" class="list_items">Contact</a></li>
+        <li><a href="#" class="list_items">Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-layout">
+    <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+    <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+    <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+  </div>
+</footer>
+</body>
+</html>

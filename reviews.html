@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="icon.jpg">
+        <link href="pc_reset2.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+        <link href="reviews.css" rel="stylesheet">
+        <script src="menu_panel.js" defer></script>
+        <script src="reviews.js" defer></script>
+        <title>Reviews</title>
+    </head>
+
+    <body>
+      <div id="menu_panel">
+        <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+        <ul>
+          <li><a href="home.html" class="hyperlink">Home</a></li>
+          <span class="submenu-parent">
+            <span><a href="menu.html" class="hyperlink">Menu</a></span>
+              <ul class="submenu">
+                <li><a href="food.html" class="hyperlink">Food</a></li>
+                <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+                <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+              </ul>
+          </span>
+          <li><a href="events.html" class="hyperlink">Events</a></li>
+          <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+          <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+          <li><a href="stores.html" class="hyperlink">Stores</a></li>
+          <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+          <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+          <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+          <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+        </ul>
+      </div>
+
+        <header class="top_panel">
+            <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+            <a href="home.html" class="backToHome">ILTT</a>
+            <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+            <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+        </header>
+
+        <audio src="sakuya2.mp3" preload autoplay loop></audio>
+        
+      <div class="comments">
+        <h1>Customer Reviews</h1>
+        <div class="comment">
+            <h3>James</h3>
+            <div class="stars">★★★★★</div>
+            <p>This coffee shop is an absolute gem! The inviting atmosphere, exceptional coffee, and friendly staff make it a must-visit. Their signature blend is a true delight, and the pastries are divine. A solid 5-star experience!</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">860</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">207</span>
+        </div>
+        <div class="comment">
+            <h3>Jennie</h3>
+            <div class="stars">★★★</div>
+            <p>I had a pleasant visit to this coffee shop. The atmosphere was cozy, and the coffee was good. While the service was friendly, it could have been a bit quicker. Overall, a solid 4-star experience.</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">879</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">447</span>
+        </div>
+        <div class="comment">
+            <h3>Robert</h3>
+            <div class="stars">★★★★</div>
+            <p>This coffee shop is a true delight! The atmosphere is inviting, the coffee is top-notch, and the staff is exceptionally friendly. It's my go-to spot for a perfect cup of coffee and a cozy experience. A well-deserved 5 stars!</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">827</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">330</span>
+        </div>
+        <div class="comment">
+            <h3>Maria</h3>
+            <div class="stars">★★★</div>
+            <p>This coffee shop is a true delight! The atmosphere is inviting, the coffee is top-notch, and the staff is exceptionally friendly. It's my go-to spot for a perfect cup of coffee and a cozy experience. A well-deserved 5 stars!</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">359</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">190</span>
+        </div>
+        <div class="comment">
+            <h3>Shabe</h3>
+            <div class="stars">★</div>
+            <p>Not my cup of tea!👎 Should improve.</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">10</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">1000</span>
+        </div>
+        <div class="comment">
+            <h3>Jose</h3>
+            <div class="stars">★★★★</div>
+            <p>A cozy haven for coffee enthusiasts. The rich aroma of freshly brewed beans fills the air, and their cappuccinos are exceptional. The only drawback is the limited seating.</p>
+            <button class="like-button">👍 Like</button>
+            <span class="like-count">905</span>
+            <button class="dislike-button">👎 Dislike</button>
+            <span class="dislike-count">65</span>
+        </div>
+      </div>
+        <!-- Add new comment form  -->
+      <div class="form-container">
+        <div class="form">
+          <h2>Add a new comment!</h2>
+          <button id="closeFormButton">&times;</button>
+          <form id="commentForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="rating">Rate:</label>
+              <select id="rating" required>
+                <option value="1">1 star ★</option>
+                <option value="2">2 stars ★★</option>
+                <option value="3">3 stars ★★★</option>
+                <option value="4">4 stars ★★★★</option>
+                <option value="5">5 stars ★★★★★</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="commentText">Comment:</label>
+              <textarea id="commentText" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+
+        <footer>
+            <div class="layout">
+              <div class="left-layout">
+                <h3 class="newsletter">Try their seasonal specialty drinks for a unique flavor.</h3>
+                <form action="">
+                  <input type="text" placeholder="Email Address" />
+                  <button href="mailto:ngjingyong168@gmail.com">
+                    <img src="right-arrow.png" alt="" />
+                  </button>
+                </form>
+              </div>
+              <div class="right-layout">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+                  <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+                  <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+                  <li><a href="#" class="list_items">Privacy Policy</a></li>
+                  <li><a href="#" class="list_items">Contact</a></li>
+                  <li><a href="#" class="list_items">Login</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-layout">
+              <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+              <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+              <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+            </div>
+          </footer>
+</body>
+</html>

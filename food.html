@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pc_reset2.css" rel="stylesheet">
+    <link href="base.css" rel="stylesheet">
+    <link href="food.css" rel="stylesheet">
+    <link href="icon.png" rel="icon" type="image/x-icon" >
+    <title>Food</title>
+    <script src="food.js" defer></script>
+    <script src="menu_panel.js" defer></script>
+</head>
+
+<body>
+  <div id="menu_panel">
+    <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+      <ul>
+        <li><a href="home.html" class="hyperlink">Home</a></li>
+          <span class="submenu-parent">
+            <span><a href="menu.html" class="hyperlink">Menu</a></span>
+            <ul class="submenu">
+            <li><a href="food.html" class="hyperlink">Food</a></li>
+            <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+            <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+            </ul>
+          </span>
+        <li><a href="events.html" class="hyperlink">Events</a></li>
+        <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+        <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+        <li><a href="stores.html" class="hyperlink">Stores</a></li>
+        <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+        <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+        <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+        <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+      </ul>
+  </div>
+
+  <header class="top_panel">
+    <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+    <a href="home.html" class="backToHome">ILTT</a>
+    <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+    <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+  </header>
+
+<audio src="sakuya2.mp3" preload autoplay loop></audio>
+
+<div class="food_container">
+
+  <!--Bagel-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="bagels1.jpg" alt="Bagels" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Bagels</h1>
+      <p class="description">Delicious bagels captivate the senses with their satisfying chewiness, a golden-brown crust that encases a soft interior. Topped with various flavors, they offer a delightful harmony of textures and tastes, making every bite a savory delight.</p>
+      <p class="foodPrice">RM 8</p>
+    </div>
+  </div>
+
+  <!--Scones-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="scones1.jpg" alt="Scones" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Scones</h1>
+      <p class="description">Delicious scones entice with a crumbly yet tender texture, often featuring a delightful balance of sweetness. Whether studded with fruits or adorned with clotted cream and jam, each bite offers a comforting and flavorful experience.</p>
+      <p class="foodPrice">RM 10</p>
+    </div>
+  </div>
+
+  <!--Pizza-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="pizza1.jpg" alt="Pizza" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Pizza</h1>
+      <p class="description">Indulge in the delectable allure of pizza with its harmonious fusion of crisp crust, tangy tomato sauce, melted cheese, and an array of savory toppings. Pure satisfaction in every bite.</p>
+      <p class="foodPrice">RM 30</p>
+    </div>
+  </div>
+
+  <!--Soup-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="soup1.jpg" alt="Soup" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Soup</h1>
+      <p class="description">Warm, comforting embrace for the senses. Rich aromas waft from a hearty blend of ingredients, each spoonful offering a symphony of flavors that soothe, nourish, and satisfy.</p>
+      <p class="foodPrice">RM 15</p>
+    </div>
+  </div>
+
+  <!--Salad-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="salad1.jpg" alt="salad" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Salad</h1>
+      <p class="description">A medley of crisp, fresh ingredients harmoniously combined. Vibrant colors and diverse textures create a tantalizing experience. Dressings elevate flavors, offering a healthy and delightful culinary delight.</p>
+      <p class="foodPrice">RM 18</p>
+    </div>
+  </div>
+
+  <!--Biscuits-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="biscuits1.jpg" alt="Biscuits" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Biscuits</h1>
+      <p class="description">Savor the delight of biscuits, their golden-brown exterior and fluffy interior, a perfect balance of buttery richness. A simple yet irresistible treat that warms the heart with every bite.</p>
+      <p class="foodPrice">RM 10</p>
+    </div>
+  </div>
+
+  <!--Croissants-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="croissants1.jpg" alt="Croissants" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Croissants</h1>
+      <p class="description">Indulge in the exquisite pleasure of croissants: flaky layers of buttery pastry, delicately crisp on the outside and irresistibly soft within. A symphony of textures and flavors in each bite.</p>
+      <p class="foodPrice">RM 15</p>
+    </div>
+  </div>
+
+  <!--Chicken Tenders-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="chickentenders1.jpg" alt="Chicken Tenders" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Chicken Tenders</h1>
+      <p class="description">Savor the deliciousness of chicken tenders - succulent and crispy bites of seasoned perfection. The tender meat, coated in a golden crust, offers a satisfying contrast that pleases the palate.</p>
+      <p class="foodPrice">RM 20</p></p>
+    </div>
+  </div>
+
+  <!--Wrap-->
+  <div class="img-container" onclick="toggleInfo(this)">
+    <img src="Wrap1.jpg" alt="Wrap" style="width:100%">
+    <div class="info-overlay">
+      <h1 class="foodName">Wrap</h1>
+      <p class="description">Create a scrumptious wrap by layering grilled protein, fresh veggies, cheese, and condiments on a warmed tortilla. Fold tightly and savor the blend of flavors, textures, and colors.</p>
+      <p class="foodPrice">RM 18</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="next-food">
+  <div class="pagination">
+    <a href="food.html">«</a>
+    <a href="food.html" class="active">1</a>
+    <a href="food2.html">2</a>
+    <a href="food3.html">3</a>
+    <a href="food3.html">»</a>
+  </div>
+</div>
+
+<footer>
+  <div class="layout">
+    <div class="left-layout">
+      <h3 class="newsletter">Comfy chairs and tables provide a great place to unwind.</h3>
+      <form action="">
+        <input type="text" placeholder="Email Address" />
+        <button href="mailto:ngjingyong168@gmail.com">
+          <img src="right-arrow.png" alt="" />
+        </button>
+      </form>
+    </div>
+    <div class="right-layout">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+        <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+        <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+        <li><a href="#" class="list_items">Privacy Policy</a></li>
+        <li><a href="#" class="list_items">Contact</a></li>
+        <li><a href="#" class="list_items">Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-layout">
+    <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+    <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+    <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+  </div>
+</footer>
+
+</body>
+</html>

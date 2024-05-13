@@ -1,0 +1,135 @@
+@charset "utf-8";
+@font-face {
+  font-family: Poppins;
+  src: url("Poppins-Medium.ttf") format("truetype");
+  font-family: Limelight;
+  src: url("Limelight-Regular.ttf") format("truetype");
+  font-family: NotoSerif;
+  src: url("NotoSerif.ttf") format("truetype");
+  font-family: Rubik;
+  src: url("Rubik.ttf") format("truetype");
+}
+
+img.heading{
+  display: block;
+  border: 5px black solid;
+  height: 350px;
+  width: 100%;
+  object-fit: fill;
+}
+
+p.comment{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+}
+
+div, img{
+  width: 100%;
+}
+
+.container {
+    clear : both;
+    position: relative;  
+  }
+  
+div.contact{
+    display: none;
+  }
+  
+.cursor {
+    cursor: pointer;
+  }
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 4em;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: 0.3s;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+.numbertext a{
+    font-family: Poppins, sans-serif;
+    background-color: transparent;
+    border-radius: 30px;
+    top: 36%;
+    left: 25%;
+    width: 50%;
+    font-size: 3em;
+    padding: 16px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+  }
+  
+.numbertext a.firstClicklink{
+    color: white;
+    border: 3px white solid;
+  }
+
+.numbertext a.firstClicklink:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+.numbertext a.secondClicklink{
+    color: black;
+    border: 3px black solid;
+  }
+
+.numbertext a.secondClicklink:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+
+.caption-container {
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    padding: 2px 16px;
+    color: white;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+.opacity {
+    opacity: 0.6;
+  }
+  
+.active,.opacity:hover {
+    opacity: 1;
+  }

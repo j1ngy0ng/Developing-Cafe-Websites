@@ -1,0 +1,78 @@
+@charset "utf-8";
+@font-face {
+    font-family: Poppins;
+    src: url("Poppins-Medium.ttf") format("truetype");
+}
+
+
+
+img.heading{
+    display: relative;
+    border: 5px black solid;
+    height: 375px;
+    width: 100%;
+    object-fit: fill;
+}
+
+/*Table*/
+table{
+    border:15px outset rgb(62,62,62);
+    border-collapse: separate;
+    font-family: Poppins;
+    width: 100%;
+    z-index: -1;
+}
+tr{
+    height: 25px;
+}
+
+td, th{
+    border: 2px solid rgb(0, 0, 0);
+    vertical-align: top;
+    padding: 5px;
+ }
+
+caption{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+th, tfoot{
+    background-color: rgb(84, 103, 103);
+    font-size: 25px;
+}
+
+col.date{
+    background-color: rgb(151, 172, 172);
+    width : 10%;
+}
+
+col.event{
+    background-color: rgb(187, 206, 206);
+    width: 20%;
+}
+
+col.promotion{
+    background-color: rgb(215, 239, 239);
+}
+
+table a{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: underline;
+}
+
+table a:hover{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}

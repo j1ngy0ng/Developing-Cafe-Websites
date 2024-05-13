@@ -1,0 +1,292 @@
+@font-face{
+  font-family: Poppins;
+  src: url(Poppins-Medium.ttf) format(truetype);
+}
+
+*{
+  font-family: Poppins, sans-serif;
+}
+
+
+/* Container Style */
+.membership_paragraph{
+  width: 80%;
+  margin: auto;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+
+.para_container{
+  display: block;
+  position: relative;
+  height: 40%;
+}
+
+
+.content_container1, .content_container3{
+  position: absolute;
+  right: 0;
+  max-width: 50%;
+  padding: 25px;
+}
+
+.content_container2{
+  position: absolute;
+  left: 0;
+  max-width: 50%;
+  padding: 25px;
+}
+
+
+/* Text Settings */
+.membership_hfour{
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 2em;
+  padding: 5px 25px 25px 25px;
+}
+
+.membership_heading{
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 3.5em;
+  font-style: bold;
+  padding: 30px;
+}
+
+h2.content_name{
+  clear: both;
+  font-family: Poppins, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+}
+
+
+p.para_content{
+  clear: both;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  padding: 3px 10px;
+}
+
+@media screen and (max-width: 1360px){
+  h2.content_name{
+    font-size: 1.7em;
+  }
+
+  p.para_content{
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 950px){
+  h2.content_name{
+    font-size: 1.5em;
+  }
+
+  p.para_content{
+    font-size: 0.8em;
+  }
+}
+
+
+.form_headone{
+  font-size: 3em;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* Image Settings */
+.para_pic1, .para_pic3{
+  max-width: 50%;
+  float: left;
+  
+}
+
+.para_pic2{
+  max-width: 50%;
+  float: right;
+}
+
+
+
+/* Form Style */
+
+
+/* Styles for the buttons */
+#enter_form{
+  width: auto;
+  display: block;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 50px auto;
+  transition: 0.3s;
+}
+
+#enter_form:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+
+section#form_container{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("form_background.jpg");
+  background-color: rgba(133, 133, 133, 0.9);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+div#form_signup{
+  display: flex;
+  position: absolute;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1.form_h1{
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+form{
+  margin-top: 30px;
+}
+
+form .input_field, div.media a{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.input_field input, .input_field button{
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.input_field input{
+  padding: 0 15px;
+  border: 1px solid #CACACA;
+  transition: border, background-color, 0.5s, ease;
+}
+
+.input_field input:focus{
+  border: 2px solid #303030;
+  background-color: #e0e0e0;
+}
+
+.input_field button{
+  border: none;
+  transition-property: all, ease;
+  transition-duration: 0.3s;
+  cursor: pointer;  
+}
+
+.input_field button.signup{
+  color: #fff;
+  background-color: #0171d3;
+}
+
+.input_field button.cancel{
+  color: #232836;
+  opacity: 0.7;
+}
+
+.input_field button.cancel:hover, .input_field button.cancel:focus{
+  background-color: red;
+  color: #fff;
+  opacity: 1;
+}
+
+img.eye{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 5px;
+}
+
+form div.line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+form div.line::before{
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #232836;
+  padding: 0 15px;
+}
+
+div.media a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  color: #1f1e1e;
+  box-shadow: 0 2px 0 0 #0c0c0c;
+  transform: translateY(-2px);
+  transition: transform, box-shadow, ease, 0.3s;
+}
+
+div.media a:focus{
+  box-shadow: none;
+  transform: none;
+}
+
+div.media a img{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  object-fit: contain;
+}
+
+
+div.media a span{
+  font-weight: 500;
+  opacity: 0.75;
+  color: #232836;
+}

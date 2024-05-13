@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+div.background_container{
+    width: 100%;
+    height: 100%;
+    background-image: url("info_background.jpg");
+    background-color: rgba(54, 54, 54, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+form{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+input#fname,input#lname,input#phone,input#e-mail,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 100px;
+}
+
+body > form > p{
+    font-size: small;
+}
+
+div.submit{
+    text-align: center;
+}
+
+div.submit button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.submit button :hover{
+    background-color: antiquewhite;
+}
+
+div.final{
+    text-align: center;
+}
+
+div.final > button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.final> button:hover{
+    background-color: antiquewhite;
+}

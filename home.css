@@ -1,0 +1,121 @@
+@charset "utf-8";
+@font-face {
+  font-family: Poppins;
+  src: url("Poppins-Medium.ttf") format("truetype");
+  font-family: Limelight;
+  src: url("Limelight-Regular.ttf") format("truetype");
+  font-family: NotoSerif;
+  src: url("NotoSerif.ttf") format("truetype");
+  font-family: Rubik;
+  src: url("Rubik.ttf") format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h1{
+   font-size: 20em;
+   font-family: 'Limelight', sans-serif;
+   text-align: center;
+   color: #fff;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   cursor: default;
+   font-weight: 400;
+   transition: 0.5s; 
+}
+
+
+.content button.home_button{
+    text-decoration: none;
+    display:inline-block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    border: 3px solid #fff;
+    padding: 20px 70px;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.content button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #fff;
+    color: black;
+}
+
+/* Style for the background video */
+.back-video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+/*additional content under the background video*/
+#additional-content {
+    background: white;
+    padding: 20px; 
+    font-family: Poppins;
+    font-size: 25px;
+    color:black;
+}
+
+/*food scroll container*/
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 30px;
+    margin: 20px 15px;
+    display: grid;
+    grid-template-columns: repeat(9, 300px);
+    column-gap: 30px;
+    overflow-x: scroll;
+  }
+  
+  div.scroll-container img {
+    width: 100%;
+    user-select: none;
+  }
+
+  p#head{
+    border: solid 7px black;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  section h2{
+    margin: 25px 15px;
+    font-family: Rubik, serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  section h4{
+    margin: 40px 0 0 15px;
+    font-size: 1.1em;
+    font-family: NotoSerif, serif;
+  }

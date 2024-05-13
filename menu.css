@@ -1,0 +1,21 @@
+@charset "utf-8";
+@font-face {
+    font-family: Poppins;
+    src: url("Poppins-Medium.ttf") format("truetype");
+}
+
+video{
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video:hover{
+    cursor: pointer;
+}

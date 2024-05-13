@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face{
+    font-family: Poppins;
+    src: url(Poppins-Medium.ttf);
+}
+
+
+/* Text Decoration */
+.merchandise_heading{
+    color: #fff;
+    text-align: center;
+    font-family: Limelight, sans-serif;
+    font-style: bold;
+    font-size: 3em;
+    padding: 40px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.merchandise_hfour{
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5em;
+    padding: 5px 25px 25px 25px;
+}
+
+
+p{
+    font-family: Poppins, sans-serif;
+}
+
+
+
+/* Background Image Styles */
+.merch_background{
+    width: 100%;
+    height: auto;
+    background-image: url("portrait\ background.jpg");
+    background-color: rgba(93,93,93,0.5);
+    background-blend-mode: multiply;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+    
+.merch_pic{
+    float: left;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+/* Hover Animation */
+/* Styles for Container and Each Division */
+.products_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.products_container .each_products{
+    margin: 20px;
+}
+
+.products_container .product_div{
+    background-color: #fff;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 25px auto;
+    opacity: 0.99;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+}
+
+.products_container .product_div:before{
+    content: "";
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 2;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.products_container .product_div .merch_pic{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.products_container .product_div .product_details{
+    padding: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.products_container .product_div .product_details span{
+    display: none;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.products_container .product_div .product_details .merch_name{
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.products_container .product_div .product_details .merch_content{
+    line-height: 1.2;
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-family: "Poppins", sans-serif;
+}
+
+.products_container .product_div .product_details .merch_content:last-child{
+    color: #E8BC0E;
+}
+
+
+.products_container .product_div:focus:before, .products_container .product_div:hover:before, .products_container .product_div:focus span, .products_container .product_div:hover span{
+    opacity: 1;
+    display: block;
+}
+
+.products_container .product_div:focus:before, .products_container .product_div:hover:before{
+    top: 50%;
+}
+
+.products_container .product_div:focus span, .products_container .product_div:hover span{
+    top: 0;
+}
+
+

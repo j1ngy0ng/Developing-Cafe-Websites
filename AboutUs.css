@@ -1,0 +1,83 @@
+@charset "utf-8";
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Medium.ttf) format(truetype);
+    font-family: Limelight;
+    src: url(Limelight-Regular.ttf) format(truetype);
+    font-family: NotoSerif;
+    src: url(NotoSerif.ttf) format(truetype);
+    font-family: Rubik;
+    src: url(Rubik.ttf) format(truetype);
+}
+
+/* Container Styles */
+div.article_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+div.allSection{
+    display: block;
+    position: relative;
+    height: 50%;
+}
+
+div.reason, div.barista{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding: 15px;
+}
+
+div.history, div.why{
+    position: absolute;
+    left: 0;
+    max-width: 50%;
+    padding: 15px;
+}
+
+/* Text Styles */
+p.article_text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+}
+
+@media screen and (max-width: 1300px){
+    p.article_text{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 850px){
+    p.article_text{
+        font-size: 1em;
+    }
+}
+
+p.text_bottom{
+    display: block;
+    margin: 30px auto;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Image Settings */
+img.heading{
+    display: block;
+    width: 100%;
+}
+
+
+img#photo1, img#photo3{
+    max-width: 50%;
+    float: left;
+}
+
+img#photo2, img#photo4{
+    max-width: 50%;
+    float: right;
+}
+

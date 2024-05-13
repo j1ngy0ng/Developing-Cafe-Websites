@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="icon.jpg">
+        <link href="pc_reset2.css" rel="stylesheet">
+        <link href="membership.css" rel="stylesheet">
+        <link href="base.css" rel="stylesheet">
+        <script src="menu_panel.js" defer></script>
+        <script src="membership.js" defer></script>
+        <title>Membership</title>
+    </head>
+
+    <body> 
+      <div id="menu_panel">
+        <a href="javascript:void(0)" id="closebutton">✕&nbsp;&nbsp;&nbsp;Close</a>
+          <ul>
+            <li><a href="home.html" class="hyperlink">Home</a></li>
+              <span class="submenu-parent">
+                <span><a href="menu.html" class="hyperlink">Menu</a></span>
+                <ul class="submenu">
+                <li><a href="food.html" class="hyperlink">Food</a></li>
+                <li><a href="beverages.html" class="hyperlink">Beverages</a></li>
+                <li><a href="desserts.html" class="hyperlink">Desserts</a></li>
+                </ul>
+              </span>
+            <li><a href="events.html" class="hyperlink">Events</a></li>
+            <li><a href="merchandise.html" class="hyperlink">Merchandise</a></li>
+            <li><a href="ContactUs.html" class="hyperlink">Contact&nbsp;Us</a></li>
+            <li><a href="stores.html" class="hyperlink">Stores</a></li>
+            <li><a href="AboutUs.html" class="hyperlink">About&nbsp;Us</a></li>
+            <li><a href="JoinUsNow.html" class="hyperlink">Join&nbsp;Us&nbsp;Now</a></li>
+            <li><a href="reviews.html" class="hyperlink">Reviews</a></li>
+            <li><a href="faq.html" class="hyperlink">FAQ</a></li>
+          </ul>
+      </div>
+
+        <header class="top_panel">
+            <button id="openbutton">&nbsp;&nbsp;☰&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;</button>
+            <a href="home.html" class="backToHome">ILTT</a>
+            <a href="membership.html" class="beAMember">&nbsp;&nbsp;Sign&nbsp;Up&nbsp;&nbsp;</a>
+            <a href="addToCart.html" class="addToCart"><img src="bag.png" /></a>
+        </header>
+
+
+            <h1 class="membership_heading"> Membership </h1>
+            <h4 class="membership_hfour"> Elevate Your Coffee Experience with I Like Tea Tea Membership </h4>
+
+            <div class="membership_paragraph">
+                <div class="para_container">
+                    <img src="coffee_bean.jpg" class="para_pic1" alt="Arabica Coffee Bean" />
+                    <div class="content_container1">
+                        <h2 class="content_name">Exclusive Discounts</h2>
+                        <p class="para_content">As a member, you'll enjoy exclusive discounts on our full range of handcrafted coffee beverages. 
+                        From your morning cappuccino to that afternoon pick-me-up, your membership card is your passport to savings.</p>
+                    </div>
+                </div>
+                <div class="para_container">
+                    <img src="happy_people.jpg" class="para_pic2" alt="Benefits of Joining Membership" />
+                    <div class="content_container2">
+                        <h2 class="content_name">Invitations to Private Events</h2> 
+                        <p class="para_content">Join us for members-only events where coffee takes center stage, these events are your chance to deepen your 
+                        coffee knowledge and connect with fellow aficionados.</p>
+                    </div>
+                </div>
+                <div class="para_container">
+                    <img src="have_a_coffee.jpg" class="para_pic3" alt="Have a sip of coffee" />
+                    <div class="content_container3">
+                        <h2 class="content_name">Complimentary Upgrades</h2>
+                        <p class="para_content">Elevate your coffee experience with complimentary upgrades. Whether it's an extra shot of espresso or a 
+                        flavor infusion, our members deserve a little extra magic in every cup</p>
+                    </div>
+                </div>
+            </div>
+        
+
+
+        <!--Button for entering the sign up form-->
+        <button id="enter_form" title="Sign Up Form">Sign Up Our Membership Now</button>
+        <!--Sign Up Form content-->
+        <section id="form_container">
+            <div id="form_signup">
+                <h1 class="form_h1">Sign Up</h1>
+                <form name="Sign As Member" action="/action_page.php">
+                    <div class="input_field">
+                        <input type="email" name="Email" placeholder="Email" class="input_email" required />
+                    </div>
+
+                    <div class="input_field">
+                        <input type="password" name="Password" placeholder="Password" class="input_psw" id="psw" onchange="checkPassword()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                        <img src="hide_eye.png" class="eye" alt="" />
+                    </div>
+
+                    <div class="input_field">
+                        <input type="password" name="Password-repeat" placeholder="Repeat Password" class="input_psw" id="psw-repeat" onchange="checkPassword()" required />
+                        <img src="hide_eye.png" class="eye" alt="" />
+                    </div>
+
+                    
+                    <div class="input_field">
+                        <button type="submit" class="signup">Sign Up</button>
+                    </div>
+
+                    <div class="input_field">
+                        <button type="reset" class="cancel">Cancel</button>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="media">
+                        <a href="#">
+                            <img src="google_logo.png" alt="" />
+                            <span>Login with Google</span>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="layout">
+              <div class="left-layout">
+                <h3 class="newsletter">Freshly baked pastries complement your coffee perfectly.</h3>
+                <form action="">
+                  <input type="text" placeholder="Email Address" />
+                  <button href="mailto:ngjingyong168@gmail.com">
+                    <img src="right-arrow.png" alt="" />
+                  </button>
+                </form>
+              </div>
+              <div class="right-layout">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#" class="list_items">Shipping &amp; Returns</a></li>
+                  <li><a href="#" class="list_items">Help &amp; FAQ</a></li>
+                  <li><a href="#" class="list_items">Terms &amp; Conditions</a></li>
+                  <li><a href="#" class="list_items">Privacy Policy</a></li>
+                  <li><a href="#" class="list_items">Contact</a></li>
+                  <li><a href="#" class="list_items">Login</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-layout">
+              <a href="https://instagram.com/j1ngy0ng?igshid=MzNlNGNkZWQ4Mg==" class="bottom_logo"><img src="instagram_logo.png" /></a>
+              <a href="https://www.facebook.com/jing.yong.777?mibextid=ZbWKwL" class="bottom_logo"><img src="facebook_logo.png" /></a>
+              <a href="tel:+60186632127" class="bottom_logo"><img src="whatsapp_logo.png" /></a>
+            </div>
+          </footer>
+
+
+    </body>
+   
+</html>

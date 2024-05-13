@@ -1,0 +1,406 @@
+@charset "utf-8";
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Medium.ttf) format(truetype);
+    font-family: Limelight;
+    src: url(Limelight-Regular.ttf) format(truetype);
+    font-family: NotoSerif;
+    src: url(NotoSerif.ttf) format(truetype);
+    font-family: Rubik;
+    src: url(Rubik.ttf) format(truetype);
+}
+@page {
+    size:1024px 768px;
+}
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+   list-style-image: none;
+   padding: 0;
+}
+
+li {
+    display: table;
+}
+
+a {
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Page Body Styles */
+body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+ 
+ /* Image Styles */
+header img{
+    display: block;
+    width: 100%;
+}
+
+/* Background */
+html{
+    background-color:white;
+}
+
+
+/* Style for the menu panel */
+
+.hyperlink{
+    display: inline-block;
+    position: relative;
+    opacity: 0.6;
+}
+  
+.hyperlink::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+  
+.hyperlink:hover, .hyperlink:focus{
+    opacity: 1;
+}
+  
+.hyperlink:hover::after, .hyperlink:focus::after{
+    transform: scaleX(1);
+}
+  
+  
+/* Style for the side collapsed panel*/
+#menu_panel {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+#menu_panel a {
+    margin: 15px 8px 15px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+  
+#menu_panel #closebutton {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: 20px;
+    border: 2px solid white;
+    transition: none;
+}
+
+#menu_panel #closebutton:hover{
+    border: 2px black dotted;
+}
+  
+header.top_panel{
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    border: 2px black solid;
+    background-color: rgb(255,250,250);
+}
+
+
+#openbutton {
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255,250,250);
+    padding: 5px 10px 5px 5px;
+    border: 2px solid rgb(255,250,250);
+    font-size: 24px;
+    display: block;
+    order: 0;
+}
+
+#openbutton:hover{
+    border: 2px black dotted;
+}
+
+
+header.top_panel a.backToHome{
+    display: block;
+    font-family: Limelight, serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    cursor: pointer;
+    order: 1;
+    flex-grow: 3;
+}
+
+
+header.top_panel a.beAMember{
+    color: black;
+    display: block;
+    padding: 5px 5px 5px 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    border: 2px solid rgb(255,250,250);
+    order: 2;
+}
+
+header.top_panel a.beAMember:hover{
+    border: 2px dotted black;
+}
+
+header.top_panel a.addToCart{
+    display: block;
+    width: 60px;
+    padding: 0 10px;
+    border: 2px solid rgb(255,250,250);
+    order: 3;
+}
+
+header.top_panel a.addToCart:hover{
+    border: 2px dotted black;
+}
+
+.submenu-parent{
+    position: relative;
+    display: inline-block;
+}
+  
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.submenu-parent:hover .submenu {
+    display: block;
+}
+
+
+/* Settings for iframe and chatbot*/
+img#chatbot{
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+div.chatbot_container{
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+}
+
+div.chatbot_container div.close_chatbot{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 3rem;
+    color: #fff;
+    transition: color, ease, 0.5s;
+    cursor: pointer;
+}
+
+div.chatbot_container div.close_chatbot:hover{
+    color: red;
+}
+
+iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for Footer */
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+footer div.layout{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer div.left-layout{
+    flex-grow: 2;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+}
+
+footer div.left-layout h3.newsletter{
+    font-family: NotoSerif, serif;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+footer div.left-layout form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+footer div.left-layout form input{
+    padding: 0.75rem 0;
+    border: none;
+    background-color: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+footer div.left-layout form input:focus{
+    outline: none;
+}
+
+footer div.left-layout form input::placeholder{
+    color: #1b1b1b;
+    font-family: Rubik, serif;
+}
+
+footer div.left-layout form button{
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+footer div.right-layout{
+    width: 100%;
+    max-width: 200px;
+    margin: 30px;
+}
+
+footer div.right-layout h4{
+    font-family: Rubik, serif;
+    font-family: 1em;
+    font-weight: bold;
+}
+
+footer div.right-layout ul li{
+    display: table;
+    margin-top: 10px;
+}
+
+footer div.right-layout ul li a.list_items{
+    color: black;
+    font-family: Rubik, serif;
+    font-size: 1em;
+    display: inline-block;
+    position: relative;
+}
+
+footer div.right-layout ul li a.list_items::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    transition: opacity, ease, 0.5s;
+}
+  
+footer div.right-layout ul li a.list_items:hover::after{
+    opacity: 1;
+}
+
+footer div.bottom-layout{
+    width: 60%;
+    max-width: 500px;
+    margin: 15px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px){
+    footer div.layout{
+        flex-wrap: wrap;
+    }
+}
